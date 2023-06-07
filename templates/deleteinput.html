@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<body bgcolor="#00ffff">
+<center>
+<form action="./delete">
+  selet product id:  <select name="t1">
+        {% for p in records %}
+            <option value="{{ p.pid }}">{{ p.pid }}</option>
+        {% endfor %}
+    </select><br>
+<input type="submit" value="delete">
+</form>
+</center>
+</body>
+</html>
